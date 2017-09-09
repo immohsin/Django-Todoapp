@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2>Title: {{ todo.title }}</h2>
+<hr>
+<p>
+    <i>You have this in here:</i>
+    <ul>
+    <li>{{ todo.text }}</li>
+    </ul>
+</p>
+<a href="/todos/">Go back</a>
+{% endblock %}

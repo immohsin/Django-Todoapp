@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{%  block body %}
+
+<ol>
+{% for todo in ob %}
+    <li><a href="/todos/details/{{ todo.id }}"> {{ todo.title }}</a></li>
+{% endfor %}
+</ol>
+{% endblock %}

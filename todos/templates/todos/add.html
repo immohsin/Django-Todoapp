@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="post">
+    {% csrf_token %}
+        <b>Enter Title:</b><input type="text" name="title" id="title"/><br><br>
+        <b>Enter Text:</b><input type="text" name="text" id="text"/><br><br>
+    <button type="submit">Submit</button>
+    </form>
+    <br>
+    <a href = '/'>Go back</a>
+{% endblock %}
